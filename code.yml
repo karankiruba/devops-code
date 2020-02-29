@@ -1,0 +1,10 @@
+---
+- name: intergration of ansible with git
+  hosts: all
+  tasks: 
+    - name: Integration
+      command: echo "Hey am integrated with GIT"
+      register: output
+    
+    - debug:
+        var: output

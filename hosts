@@ -1,0 +1,10 @@
+[db]
+node1
+[monior]
+node2
+[master:children]
+db
+monior
+[all:vars]
+package = wget
+package1 = ntp
