@@ -1,0 +1,16 @@
+---
+# tasks file for gamer
+- name: Create user
+    user:
+      name: king
+      password: king
+
+- name: Create directory and file
+    file:
+      path: /tmp/gamer
+      state: directory
+
+- name: Create gamer.txt file
+    file:
+      path: /tmp/gamer/gamer.txt
+      state: touch

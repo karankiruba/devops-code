@@ -1,0 +1,9 @@
+---
+- name: install ntp, wget
+  yum:
+    name:
+      - httpd
+      - wget
+    state: present
+  notify:
+    - restart ntp 
